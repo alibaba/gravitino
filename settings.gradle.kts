@@ -47,7 +47,6 @@ include("catalogs:catalog-kafka")
 include("catalogs:catalog-model")
 
 include("catalogs-contrib:catalog-jdbc-clickhouse")
-include("catalogs-contrib:catalog-jdbc-hologres")
 include("catalogs-contrib:catalog-jdbc-oceanbase")
 
 include(

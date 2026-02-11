@@ -1319,9 +1319,7 @@ public class JsonUtils {
         String strategy = getString(STRATEGY, node);
         builder.withStrategy(Strategy.getByName(strategy));
       }
-      if (node.has(NUMBER)) {
-        builder.withNumber(getInt(NUMBER, node));
-      }
+      builder.withNumber(getInt(NUMBER, node));
       List<FunctionArg> args = Lists.newArrayList();
       node.get(FUNCTION_ARGS).forEach(arg -> args.add(readFunctionArg(arg)));
       return builder.withArgs(args.toArray(FunctionArg.EMPTY_ARGS)).build();

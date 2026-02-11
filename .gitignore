@@ -60,11 +60,3 @@ derby.log
 web/node_modules
 web/dist
 web/.next
-
-# Agent
-AGENT.md
-CLAUDE.md
-.qoder/*
-
-# Hologres Test
-scripts/hologres-test/*
